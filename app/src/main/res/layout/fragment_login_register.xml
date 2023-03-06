@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.LoginRegisterFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:layout_marginTop="103dp"
+        android:src="@drawable/hello"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:fontFamily="@font/sfprodisplay_700"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="103dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="158dp"
+        android:fontFamily="@font/sprodisplay_400"
+        android:text="@string/login_for"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:paddingStart="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="262dp"
+        android:fontFamily="@font/sprodisplay_400"
+        android:text="@string/e_mail"
+        android:paddingStart="25dp"
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/enter_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/radius_edittext"
+        android:hint="@string/example_mail_ru"
+        android:textColor="@color/black"
+        android:layout_marginTop="285dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="14dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/but_next"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="365dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cornerRadius="10dp"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sfprodisplay_600"
+        android:textSize="17sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/or_login"
+        android:layout_marginTop="600dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="@color/grey"
+        android:textSize="15sp"
+        android:fontFamily="@font/sprodisplay_400"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/but_yandex"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="636dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cornerRadius="10dp"
+        android:text="@string/yandex"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sfprodisplay_600"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/white" />
+</FrameLayout>

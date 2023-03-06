@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/screensaverFragment">
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.medic.fragments.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_loginRegisterFragment"
+            app:destination="@id/loginRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginRegisterFragment"
+        android:name="com.example.medic.fragments.LoginRegisterFragment"
+        android:label="fragment_login_register"
+        tools:layout="@layout/fragment_login_register" >
+        <action
+            android:id="@+id/action_loginRegisterFragment_to_emailKodFragment"
+            app:destination="@id/emailKodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screensaverFragment"
+        android:name="com.example.medic.fragments.ScreensaverFragment"
+        android:label="fragment_screensaver"
+        tools:layout="@layout/fragment_screensaver" >
+        <action
+            android:id="@+id/action_screensaverFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailKodFragment"
+        android:name="com.example.medic.fragments.EmailKodFragment"
+        android:label="fragment_email_kod"
+        tools:layout="@layout/fragment_email_kod" />
+</navigation>
