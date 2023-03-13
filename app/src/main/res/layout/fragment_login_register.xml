@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,96 +8,143 @@
     tools:context=".fragments.LoginRegisterFragment">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="160dp"
-        android:layout_marginTop="103dp"
-        android:src="@drawable/hello"
-        android:layout_gravity="center_horizontal"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/welcome"
-        android:fontFamily="@font/sfprodisplay_700"
-        android:textSize="24sp"
-        android:textColor="@color/black"
-        android:layout_marginTop="103dp"
-        android:layout_gravity="center_horizontal"/>
-
-    <TextView
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="158dp"
-        android:fontFamily="@font/sprodisplay_400"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/hello"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="79dp"
+        android:fontFamily="@font/sfprodisplay_700"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/sfprodisplay_400"
         android:text="@string/login_for"
         android:textColor="@color/black"
         android:textSize="15sp"
-        android:paddingStart="30dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="262dp"
-        android:fontFamily="@font/sprodisplay_400"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="265dp"
+        android:fontFamily="@font/sfprodisplay_400"
         android:text="@string/e_mail"
-        android:paddingStart="25dp"
         android:textColor="@color/grey"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/enter_email"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/radius_edittext"
         android:hint="@string/example_mail_ru"
+        android:padding="14dp"
         android:textColor="@color/black"
-        android:layout_marginTop="285dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:padding="14dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/but_next"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="56dp"
-        android:layout_marginTop="365dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="20dp"
-        app:cornerRadius="10dp"
+        android:fontFamily="@font/sfprodisplay_600"
         android:text="@string/next"
         android:textAllCaps="false"
-        android:fontFamily="@font/sfprodisplay_600"
         android:textSize="17sp"
-        android:layout_gravity="center_horizontal"/>
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_email" />
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/or_login"
-        android:layout_marginTop="600dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="238dp"
+        android:fontFamily="@font/sfprodisplay_400"
         android:gravity="center"
+        android:text="@string/or_login"
         android:textColor="@color/grey"
         android:textSize="15sp"
-        android:fontFamily="@font/sprodisplay_400"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_next" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/but_yandex"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="636dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="20dp"
-        app:cornerRadius="10dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/sfprodisplay_600"
         android:text="@string/yandex"
         android:textAllCaps="false"
-        android:fontFamily="@font/sfprodisplay_600"
-        android:textSize="17sp"
         android:textColor="@color/black"
-        android:layout_gravity="center_horizontal"
-        android:backgroundTint="@color/white" />
-</FrameLayout>
+        android:textSize="17sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/otday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="118dp"
+        android:text="отдай вьюпагер"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_next" />
+</androidx.constraintlayout.widget.ConstraintLayout>

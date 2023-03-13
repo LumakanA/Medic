@@ -4,4 +4,16 @@
     <string name="welcome">Добро пожаловать!</string>
     <string name="next">Далее</string>
     <string name="yandex">Войти с Яндекс</string>
+    <string name="resend_code">Отправить код повторно можно будет через 59 секунд</string>
+    <string name="create_pass">Создайте пароль</string>
+    <string name="for_protect">Для защиты ваших персональных данных</string>
+    <string name="create_card">Создание карты пациента</string>
+    <string name="without_card">Без карты пациента вы не сможете заказать анализы.</string>
+    <string name="in_card">В картах пациентов будут храниться результаты\nанализов вас и ваших близких.</string>
+    <string name="name">Имя</string>
+    <string name="surname">Отчество</string>
+    <string name="last_name">Фамилия</string>
+    <string name="DOB">Дата рождения</string>
+    <string name="create">Создать</string>
+    <string name="search_analyzes">Искать анализы</string>
 </resources>

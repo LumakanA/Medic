@@ -14,4 +14,6 @@
     <color name="but_unactive">#C9D4FB</color>
     <color name="but_active">#1A6FEE</color>
     <color name="but_back">#7E7E9A</color>
+    <color name="transparent">#00000000</color>
+
 </resources>

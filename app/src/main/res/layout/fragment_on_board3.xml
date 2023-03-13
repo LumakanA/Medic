@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,58 +11,71 @@
         android:id="@+id/skipTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:text="@string/end"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="264dp"
         android:fontFamily="@font/lato_600"
+        android:text="@string/end"
         android:textColor="@color/blue"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/plusImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:src="@drawable/shape" />
+        android:layout_marginTop="17dp"
+        android:src="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/analyzesTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="220dp"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/monitoring"
+        android:layout_marginTop="200dp"
         android:fontFamily="@font/lato_600"
+        android:text="@string/monitoring"
         android:textColor="@color/green"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skipTextView" />
 
     <TextView
         android:id="@+id/expressTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="273dp"
-        android:layout_marginEnd="79dp"
-        android:fontFamily="@font/sprodisplay_400"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/sfprodisplay_400"
         android:text="@string/doctors"
-        android:gravity="center_vertical|center_horizontal"
         android:textColor="@color/grey"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:gravity="center_vertical|center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/analyzesTextView" />
 
     <ImageView
         android:id="@+id/screen1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:src="@drawable/group_3"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="335dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expressTextView" />
 
     <ImageView
         android:id="@+id/illustrationImageView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/illustration_1"
-        android:layout_marginTop="440dp"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_marginTop="60dp"
+        android:src="@drawable/illustration_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen1" />
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

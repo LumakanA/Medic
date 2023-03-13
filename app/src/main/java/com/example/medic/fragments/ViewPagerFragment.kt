@@ -1,5 +1,6 @@
 package com.example.medic.fragments
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -25,7 +26,13 @@ class ViewPagerFragment : Fragment() {
     }
 
     private fun initial() {
-        binding.viewPager2.adapter = PagerAdapter(this)
+        val prefs = requireActivity().getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE)
+        val onboardCompleted = prefs.getBoolean("completed", false)
+        if (onboardCompleted) {
+            findNavController().navigate(R.id.action_viewPagerFragment_to_loginRegisterFragment)
+        } else {
+            binding.viewPager2.adapter = PagerAdapter(this)
+        }
     }
 
 }

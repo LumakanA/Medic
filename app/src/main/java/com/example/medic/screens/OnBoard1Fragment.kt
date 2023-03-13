@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.medic.MainActivity
+import com.example.medic.R
 import com.example.medic.databinding.FragmentOnBoard1Binding
 import com.example.medic.fragments.ViewPagerFragment
 
@@ -23,6 +25,9 @@ class OnBoard1Fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.fast.setOnClickListener{
+            findNavController().navigate(R.id.createCardFragment)
+        }
 
         binding.skipTextView.setOnClickListener {
             (requireParentFragment() as ViewPagerFragment).binding.viewPager2.setCurrentItem(1, true)

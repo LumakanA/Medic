@@ -35,5 +35,32 @@
         android:id="@+id/emailKodFragment"
         android:name="com.example.medic.fragments.EmailKodFragment"
         android:label="fragment_email_kod"
-        tools:layout="@layout/fragment_email_kod" />
+        tools:layout="@layout/fragment_email_kod" >
+        <action
+            android:id="@+id/action_emailKodFragment_to_createPassFragment"
+            app:destination="@id/createPassFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPassFragment"
+        android:name="com.example.medic.fragments.CreatePassFragment"
+        android:label="fragment_create_pass"
+        tools:layout="@layout/fragment_create_pass" >
+        <action
+            android:id="@+id/action_createPassFragment_to_createCardFragment"
+            app:destination="@id/createCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCardFragment"
+        android:name="com.example.medic.fragments.CreateCardFragment"
+        android:label="fragment_create_card"
+        tools:layout="@layout/fragment_create_card" >
+        <action
+            android:id="@+id/action_createCardFragment_to_analyzesFragment"
+            app:destination="@id/analyzesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/analyzesFragment"
+        android:name="com.example.medic.analyzes.AnalyzesFragment"
+        android:label="fragment_analyzes"
+        tools:layout="@layout/fragment_analyzes" />
 </navigation>
