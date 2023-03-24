@@ -63,4 +63,9 @@
         android:name="com.example.medic.analyzes.AnalyzesFragment"
         android:label="fragment_analyzes"
         tools:layout="@layout/fragment_analyzes" />
+    <fragment
+        android:id="@+id/iconAppFragment"
+        android:name="com.example.medic.fragments.IconAppFragment"
+        android:label="fragment_icon_app"
+        tools:layout="@layout/fragment_icon_app" />
 </navigation>

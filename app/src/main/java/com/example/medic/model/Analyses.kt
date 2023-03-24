@@ -13,14 +13,3 @@ data class Analyses(
 	val category: String,
 	val preparation: String,
 )
-
-//{
-//	"id": 1,
-//	"name": "пример",
-//	"description": "пример",
-//	"price": "пример",
-//	"category": "пример",
-//	"time_result": "пример",
-//	"preparation": "пример",
-//	"bio": "пример"
-//}

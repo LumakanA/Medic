@@ -15,5 +15,6 @@
     <color name="but_active">#1A6FEE</color>
     <color name="but_back">#7E7E9A</color>
     <color name="transparent">#00000000</color>
+    <color name="bg_rv">#F4F4F4</color>
 
 </resources>
